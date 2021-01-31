@@ -1,7 +1,9 @@
 using System;
+using ByteBank.Sistemas;
+
 namespace ByteBank.Funcionarios
 {
-	public class Diretor : Funcionario
+	public class Diretor : Autenticavel
 	{
 		public Diretor(string cpf) : base(cpf, 5000)
 		{
@@ -11,7 +13,7 @@ namespace ByteBank.Funcionarios
 		public override void AumentarSalario()
 		{
 			Salario *= 1.15;
-		}	
+		}
 
 		public override double GetBonificacao()
 		{
